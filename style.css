@@ -1,0 +1,61 @@
+.calendario {
+    display: grid;
+    grid-template-columns: 150px repeat(5, 1fr); 
+    grid-template-rows: 50px repeat(4, 100px);   
+    gap: 5px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado, .horario, .celda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.encabezado {
+    background-color: #333;
+}
+
+.horario {
+    background-color: #555;
+}
+
+.actividad1  { background-color: #e74c3c; }
+.actividad2  { background-color: #3498db; }
+.actividad3  { background-color: #2ecc71; }
+.actividad4  { background-color: #f39c12; }
+.actividad5  { background-color: #9b59b6; }
+.actividad6  { background-color: #1abc9c; }
+.actividad7  { background-color: #e67e22; }
+.actividad8  { background-color: #34495e; }
+.actividad9  { background-color: #d35400; }
+.actividad10 { background-color: #7f8c8d; }
+.actividad11 { background-color: #72a016; }
+.actividad12 { background-color: #c0392b; }
+.actividad13 { background-color: #2980b9; }
+.actividad14 { background-color: #8e44ad; }
+.actividad15 { background-color: #27ae60; }
+.actividad16 { background-color: #1ac1d7; }
+.actividad17 { background-color: #e84393; }
+.actividad18 { background-color: #6c5ce7; }
+.actividad19 { background-color: #fd79a8; }
+.actividad20 { background-color: #f1c40f; }
+
+.celda {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.celda:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
